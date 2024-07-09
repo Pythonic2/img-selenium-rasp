@@ -1,0 +1,11 @@
+version: '3.8'
+
+
+services:
+  bot:
+    container_name: selenium-rasp-hub
+    restart: always
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    pull_policy: build
