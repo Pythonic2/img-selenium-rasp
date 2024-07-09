@@ -5,6 +5,8 @@ services:
   bot:
     container_name: selenium-rasp-hub
     restart: always
+    ports:
+      - 4444:4444
     build: 
       context: .
       dockerfile: Dockerfile
